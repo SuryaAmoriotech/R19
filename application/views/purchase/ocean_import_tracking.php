@@ -1499,8 +1499,6 @@ $.ajax({
         $select.append(option); // append new options
     }
 
-//    $('#adress').selectmenu(); 
-//    $('#adress').append(result).selectmenu('refresh',true);
    $("#bodyModal1").html("New Customer Added Successfully");
   $('#adress').show();
   $('#myModal1').modal('show');
@@ -1512,7 +1510,6 @@ $.ajax({
    $('.modal-backdrop').remove();
 
 },2500);
-  //  console.log(data);
     }
 });
 event.preventDefault();
