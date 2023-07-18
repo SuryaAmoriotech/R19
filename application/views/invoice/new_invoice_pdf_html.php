@@ -87,7 +87,7 @@ th{
 
 
 
-     <div class="col-sm-4 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-4 text-center" style="color:white;"><h3><?php echo "SALE INVOICE"; ?></h3></div>
    
    <div class="col-sm-5"><img src="<?php echo  base_url().$logo; ?>"   style='width: 50%;'  /></div>
 
@@ -178,20 +178,7 @@ for($m=1;$m<count($all_invoice);$m++){
                         <th rowspan="1"  class="text-center text-white">Sales Slab Price</th>
                           <th rowspan="1"  class="text-center text-white">Total</th>
                     </tr>
-                    <!-- <tr>
-                    <th  class="text-center"></th>
-                                            <th  class="text-center"></th>    
-                                            <th  class="text-center"></th>   
-                                            <th  class="text-center"></th>   
-                                            <th  class="text-center"></th>  
-                                            <th  class="text-center"></th>  
-                                             <th  class="text-center">Width </th>
-                                            <th  class="text-center">Height</th>  
-                                            <th  class="text-center"></th>   
-                                            <th  class="text-center"></th>   
-                                            <th  class="text-center"></th>  
-                                            <th  class="text-center"></th> 
-                                        </tr> -->
+       
                 </thead>
               <tbody id="addPurchaseItem_<?php echo $m;  ?>">
                                     <?php  $n=0; ?>
@@ -327,7 +314,7 @@ elseif($template==1)
 
 
 
-<div class="col-sm-5 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+<div class="col-sm-5 text-center" style="color:white;"><h3><?php  echo "SALE INVOICE"; ?></h3></div>
 
 <div class="col-sm-3"><img src="<?php echo  base_url().$logo; ?>"   style='width: 70%;'  /></div>
 
@@ -399,20 +386,7 @@ for($m=1;$m<count($all_invoice);$m++){
                 <th rowspan="1"  class="text-center text-white">Sales Slab Price</th>
                   <th rowspan="1"  class="text-left text-white">Total</th>
             </tr>
-            <!-- <tr>
-            <th  class="text-center"></th>
-                                    <th  class="text-center"></th>    
-                                    <th  class="text-center"></th>   
-                                    <th  class="text-center"></th>   
-                                    <th  class="text-center"></th>  
-                                    <th  class="text-center"></th>  
-                                     <th  class="text-center">Width </th>
-                                    <th  class="text-center">Height</th>  
-                                    <th  class="text-center"></th>   
-                                    <th  class="text-center"></th>   
-                                    <th  class="text-center"></th>  
-                                    <th  class="text-center"></th> 
-                                </tr> -->
+
         </thead>
       <tbody id="addPurchaseItem_<?php echo $m;  ?>">
                             <?php  $n=0; ?>
@@ -540,7 +514,7 @@ elseif($template==2)
 
        <div class="col-sm-3"><img src="<?php echo  base_url().$logo; ?>"   style='width: 70%;'  /></div>
 
-       <div class="col-sm-3 text-center" style="color:white;     text-align: end;"><h3><?php echo $header; ?></h3></div>
+       <div class="col-sm-3 text-center" style="color:white;     text-align: end;"><h3><?php  echo "SALE INVOICE"; ?></h3></div>
 
        <div class="col-sm-6" style="color:white;font-weight:bold ;text-align: end;" id='company_info'>          
      <b><?php echo display('Company name') ?> : </b><?php echo $company[0]['company_name']; ?><br>

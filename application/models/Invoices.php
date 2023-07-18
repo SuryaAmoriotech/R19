@@ -2290,11 +2290,11 @@ $data2 = array(
                 'freight_forwarder' =>$this->input->post('freight_forwarder',TRUE),
                 'particular'   => $this->input->post('particulars',TRUE),
               
-               
+                // attachments
                 'status'             => 1,
                 'create_by'       =>  $this->session->userdata('user_id'),
             );
-          
+          print_r($data); die();    
             $purchase_id_1 = $this->db->where('booking_no',$this->input->post('booking_no',TRUE));
             $q=$this->db->get('ocean_export_tracking');
             $row = $q->row_array();

@@ -53,7 +53,7 @@
      <div class="col-sm-2"><img src="<?php echo  $logo; ?>"   style='width: 100%;'  /></div>
 
         
-     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo "QUOTATION"; ?></h3></div>
      
      <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>          
      <b>  <?php echo display('Company name') ?> : </b><?php echo $cname; ?><br>
@@ -280,7 +280,7 @@ elseif($template==1)
 
 
 
-<div class="col-sm-5 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+<div class="col-sm-5 text-center" style="color:white;"><h3><?php echo "QUOTATION"; ?></h3></div>
 
 
 <div class="col-sm-3"><img src="<?php echo  $logo; ?>"   style='width: 70%;'  /></div>
@@ -512,7 +512,7 @@ elseif($template==3)
 <div class="brand-section"  style="background-color:<?php echo $color; ?>">
 
 <div class="row" >
-        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo "QUOTATION"; ?></h3></div>
 
         <div class="col-sm-4"><img src="<?php echo $logo; ?>"   style='width: 30%;float:right;'  /></div>
 

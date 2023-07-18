@@ -67,7 +67,7 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
           <b>   <?php echo display('Email') ?> : </b><?php echo $email; ?><br>
           <b>   <?php echo display('Contact') ?> : </b><?php echo $phone; ?><br>
        </div>
-       <div class="col-sm-4 text-center" style="text-align:center;color:white;"><h3><?php echo $header; ?></h3></div>
+       <div class="col-sm-4 text-center" style="text-align:center;color:white;"><h3><?php echo "TRUCKING"; ?></h3></div>
        <div class="col-sm-4" style="text-align:center;"><img src="<?php echo  base_url().$logo; ?>" style='width: 50%;'>
         
         </div>
@@ -204,10 +204,9 @@ $Web_settings = $CI->Web_settings->retrieve_setting_editdata();
       
      </div>
 
-     <div class="col-sm-6 text-center" style="text-align:center;color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-6 text-center" style="text-align:center;color:white;"><h3><?php echo "TRUCKING"; ?></h3></div>
 
 
-   <!-- <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div> -->
 
   <div class="col-sm-4" id='company_info' style="color:white;">
          
@@ -337,7 +336,7 @@ elseif($template==3)
 
 
 
-        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo "TRUCKING"; ?></h3></div>
         <div class="col-sm-4"><img src="<?php echo  base_url().$logo; ?>" style='width: 30%;float:right;'> </div>
 
         

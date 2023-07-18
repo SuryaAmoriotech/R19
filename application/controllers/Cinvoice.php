@@ -573,70 +573,6 @@ echo json_encode($data);
 
     }
 
-//     // Send email Attachments
-//     public function sendmail_with_attachments($invoice_id)
-//     {
-//       $CA = & get_instance();
-//       $CI = & get_instance();
-//       $CA->load->model('invoice_design');
-//       $CA->load->model('Web_settings');
-
-//       $CI->load->model('invoice_content');
-
-//       $sql='select * from invoice_content ';
-//       $query=$this->db->query($sql);
-//       $company_content=$query->result_array();
-      
-//     //   print_r( $company_content);
-//     //  echo $this->db->last_query();die();
-
-//       $currency_details = $CI->Web_settings->retrieve_setting_editdata();
-
-//         $setting=  $CI->Web_settings->retrieve_setting_editdata();
-//       $this->session->set_userdata('image_email', base_url().$setting[0]['invoice_logo']);
-      
-//       $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
-//     $uid=$_SESSION['user_id'];
-//     $sql='select c.* from company_information c join user_login as u on u.cid=c.company_id where u.user_id='.$uid;
-
-//     $query=$this->db->query($sql);
-//     $company_info=$query->result_array();
-//     $product_sql='select c.* from invoice i join customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$invoice_id;
-//     $query=$this->db->query($product_sql);
-//   // echo $this->db->last_query();
-//     $customer_info=$query->result_array();
-//     $this->session->set_userdata('image_email', base_url().$company_info[0]['logo']);
-//     $sql='select p.*, i.* from `invoice_details` i join invoice p on p.invoice_id=i.invoice_id where i.invoice_id="'.$invoice_id.'";';
-//     $query=$this->db->query($sql);
-//     $product_info=$query->result_array();
-//     $invoice_sql='select * from `invoice` i join invoice_details p on p.invoice_id=i.invoice_id';
-//     $query=$this->db->query($invoice_sql);
-//     $invoice_info=$query->result_array();
-//     $email_sql = 'SELECT * FROM `email_config`';
-//     $query = $this->db->query($email_sql);
-//     $email_info = $query->result_array();
-//     $sql='select * from invoice where invoice_id='.$invoice_id;
-//     $query=$this->db->query($sql);
-//     $invoice=$query->result_array();
-//     $dataw = $CA->invoice_design->retrieve_data($this->session->userdata('user_id'));
-//     $data['curn_info_default'] = $curn_info_default[0]['currency_name'];
-//     $data['currency'] = $currency_details;
-//     $data['company_info']=$company_info;
-//     $data['customer_info']=$customer_info;
-//     $data['product_info']=$product_info;
-//     $data['invoiceid']=$invoice_id;
-//     $data['invoice_info']=$invoice_info;
-//     $data['invoice'] = $invoice;
-
-
-//      $data['company_content'] = $company_content;
-//      $data['logo'] = $setting;
-
-
-//     $data['head']=$dataw;
-//     $data['template'] = $dataw[0]['template'];
-//     $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-// }
 
     public function sendmail_with_attachments($invoice_id)
     {
@@ -654,8 +590,7 @@ echo json_encode($data);
       $company_content= $CI->invoice_content->retrieve_info_data();
       
    
-    //  echo $this->db->last_query();die();
-
+ 
       $currency_details = $CI->Web_settings->retrieve_setting_editdata();
 
       $setting=  $CI->Web_settings->retrieve_setting_editdata();
@@ -698,10 +633,8 @@ echo json_encode($data);
     $data['invoice'] = $invoice;
 
     $data['logo'] = $setting;
-//echo $setting[0]['invoice_logo'];
 
 
-  //  $data['company_content'] = $company_content;
 
     $data['head']=$dataw;
 
@@ -1907,59 +1840,6 @@ public function manual_sales_insert(){
 
 
 
-
-
-// $uid=$_SESSION['user_id'];
-
-//  $sql='select c.* from company_information c 
-    
-//     join 
-//     user_login as u 
-//     on u.cid=c.company_id
-//     where u.user_id='.$uid;
-//     $query=$this->db->query($sql);
-
-//     $company_info=$query->result_array();
-
-
-//  $sql='SELECT c.* from invoice i JOIN customer_information c on c.customer_id=i.customer_id where i.invoice_id='.$uid;
-//     $query=$this->db->query($sql);
-
-//     $customer_info=$query->result_array();
-
-
-
-
-//   $sql='SELECT p.* FROM `invoice_details` i JOIN
-
-//  product_information p
-//  on p.product_id=i.product_id
-
-//  where 
-//  i.invoice_id="'.$invoiceid.'";
-//  ';
-
-//     $query=$this->db->query($sql);
-
-//     $product_info=$query->result_array();
-
-
-
-//     $data['company_info']=$company_info;
-//     $data['customer_info']=$customer_info;
-//     $data['product_info']=$product_info;
-//     $data['invoiceid']=$invoiceid;
-
-
-
-
-//     $content = $this->load->view('pdf_attach_mail/new_sale', $data, true);
-//     if($content)
-//     {
-//   redirect("Cinvoice/manage_invoice");
-// }
-//          // $this->template->full_admin_html_view($content);
-// }   
 
 
 

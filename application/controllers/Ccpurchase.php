@@ -44,9 +44,6 @@ class Ccpurchase extends CI_Controller {
  
      $this->session->set_flashdata('show', display('successfully_delete'));
 
-    //  if ($result == true) {
-    //     $this->session->set_userdata(array('message'=>display('successfully_delete')));
-    //  }
      redirect('Ccpurchase/manage_trucking');
  }
 
@@ -191,12 +188,8 @@ class Ccpurchase extends CI_Controller {
         $voucher_no = $this->Purchases->trucking_voucher_no();
         $currency_details = $CI->Web_settings->retrieve_setting_editdata();
         $curn_info_default = $CI->db->select('*')->from('currency_tbl')->where('icon',$currency_details[0]['currency'])->get()->result_array();
-<<<<<<< HEAD
         $taxfield1 = $CI->Invoices->tax_data();
-=======
-      $taxfield1 = $CI->Invoices->tax_data();
->>>>>>> dffda8f6e82574e4422d8aa8dfec7d070ddffcd0
-      
+
         $data = array(
             'curn_info_default' =>$curn_info_default[0]['currency_name'],
           

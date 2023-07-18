@@ -75,7 +75,7 @@ display:none;
        <div class="col-sm-2"><img src="<?php echo  base_url().$logo; ?>"   style='width: 100%;'  /></div>
 
 
-     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+     <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo "OCEAN EXPORT"; ?></h3></div>
     <div class="col-sm-4" style="color:white;font-weight:bold;" id='company_info'>
   
           <b> <?php echo display('Company name') ?> : </b><?php echo $business_name; ?><br>
@@ -144,7 +144,7 @@ elseif($template==1)
           <b>   <?php echo display('Email') ?>  : </b><?php echo $email; ?><br>
           <b>   <?php echo display('Contact') ?>  : </b><?php echo $phone; ?><br>
         </div>
-        <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+        <div class="col-sm-6 text-center" style="color:white;"><h3><?php echo "OCEAN EXPORT"; ?></h3></div>
     
 
 
@@ -205,7 +205,7 @@ elseif($template==3)
 
 
 <div class="row" >
-        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo $header; ?></h3></div>
+        <div class="col-sm-2 text-center" style="color:white;"><h3><?php echo "OCEAN EXPORT"; ?></h3></div>
 
         <div class="col-sm-4"><img src="<?php echo  base_url().$logo; ?>"   style='width: 30%;float:right;'  /></div>
 
